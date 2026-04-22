@@ -31,7 +31,7 @@ const Navbar = () => {
     >
       <div className="container flex items-center justify-between h-20">
         <a href="#inicio" className="flex items-center gap-2" aria-label="CIL Venezuela — Inicio">
-          <img src={logo} alt="CIL Venezuela — Financiamiento de cirugías estéticas" className="h-12 w-auto" />
+          <img src={logo} alt="CIL Venezuela — Financiamiento de cirugías estéticas" className="h-16 w-auto" />
         </a>
 
         <nav className="hidden lg:flex items-center gap-10">

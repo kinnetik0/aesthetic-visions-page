@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="container py-16 grid md:grid-cols-4 gap-10">
         <div className="md:col-span-2">
           <div className="bg-background/95 inline-block p-3 rounded">
-            <img src={logo} alt="CIL Venezuela" className="h-14 w-auto" />
+            <img src={logo} alt="CIL Venezuela" className="h-20 w-auto" />
           </div>
           <p className="mt-4 max-w-sm text-sm leading-relaxed">
             Pioneros en el financiamiento de cirugías plásticas estéticas en Venezuela.
