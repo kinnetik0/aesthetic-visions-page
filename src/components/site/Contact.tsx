@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Phone, Mail, MapPin, Clock } from "lucide-react";
+import { Phone, Mail, MapPin, Instagram } from "lucide-react";
 import { toast } from "sonner";
 
 const Contact = () => {
@@ -11,7 +11,7 @@ const Contact = () => {
     setTimeout(() => {
       setLoading(false);
       toast.success("Solicitud enviada", {
-        description: "Te contactaremos en menos de 24 horas para confirmar tu consulta.",
+        description: "Te contactaremos en menos de 24 horas para iniciar tu afiliación.",
       });
       (e.target as HTMLFormElement).reset();
     }, 800);
@@ -26,22 +26,22 @@ const Contact = () => {
             <span className="text-xs uppercase tracking-[0.3em] text-gold">Contacto</span>
           </div>
           <h2 className="font-serif text-4xl md:text-5xl text-plum text-balance">
-            Reserva tu <em className="text-gold not-italic">consulta privada</em>
+            Inicia tu <em className="text-gold not-italic">afiliación</em>
           </h2>
           <p className="mt-6 text-muted-foreground max-w-md leading-relaxed">
-            La primera consulta es totalmente confidencial. Cuéntanos lo que deseas y
-            diseñaremos un plan a tu medida.
+            Completa tus datos y un asesor te contactará para explicarte los planes
+            de financiamiento y agendar tu evaluación médica.
           </p>
 
           <ul className="mt-12 space-y-6">
             {[
-              { icon: MapPin, label: "Calle Serrano 45, 28001 Madrid" },
-              { icon: Phone, label: "+34 900 123 456" },
-              { icon: Mail, label: "hola@maisonestetica.com" },
-              { icon: Clock, label: "Lun – Vie  ·  09:00 – 20:00" },
+              { icon: MapPin, label: "Av. La Estancia con calle Ernesto Blohm, Torre A, Piso 9, Ofic. 910. Chuao, Caracas." },
+              { icon: Phone, label: "+58 414 127 1960" },
+              { icon: Mail, label: "info@cilvenezuela.com" },
+              { icon: Instagram, label: "@cirugiacredito · +76.000 seguidores" },
             ].map(({ icon: Icon, label }) => (
-              <li key={label} className="flex items-center gap-4">
-                <span className="w-10 h-10 flex items-center justify-center bg-plum text-gold">
+              <li key={label} className="flex items-start gap-4">
+                <span className="w-10 h-10 flex items-center justify-center bg-plum text-gold shrink-0">
                   <Icon size={16} strokeWidth={1.5} />
                 </span>
                 <span className="text-foreground/80">{label}</span>
@@ -66,31 +66,30 @@ const Contact = () => {
             <input required type="email" className="mt-2 w-full bg-transparent border-b border-border focus:border-gold outline-none py-2 text-foreground" />
           </div>
           <div>
-            <label className="text-xs uppercase tracking-[0.2em] text-plum">Teléfono</label>
+            <label className="text-xs uppercase tracking-[0.2em] text-plum">Teléfono / WhatsApp</label>
             <input required type="tel" className="mt-2 w-full bg-transparent border-b border-border focus:border-gold outline-none py-2 text-foreground" />
           </div>
           <div>
-            <label className="text-xs uppercase tracking-[0.2em] text-plum">Tratamiento de interés</label>
+            <label className="text-xs uppercase tracking-[0.2em] text-plum">Plan de interés</label>
             <select required className="mt-2 w-full bg-transparent border-b border-border focus:border-gold outline-none py-2 text-foreground">
               <option value="">Selecciona…</option>
-              <option>Rinoplastia</option>
-              <option>Aumento mamario</option>
-              <option>Lifting facial</option>
-              <option>Liposucción</option>
-              <option>Medicina estética</option>
-              <option>Otro</option>
+              <option>Plan Semicontado</option>
+              <option>Plan Prepagado</option>
+              <option>Plan Europeo</option>
+              <option>Plan de Cooperativas</option>
+              <option>Aún no lo sé, necesito asesoría</option>
             </select>
           </div>
           <div>
-            <label className="text-xs uppercase tracking-[0.2em] text-plum">Mensaje</label>
-            <textarea rows={3} className="mt-2 w-full bg-transparent border-b border-border focus:border-gold outline-none py-2 text-foreground resize-none" />
+            <label className="text-xs uppercase tracking-[0.2em] text-plum">Cirugía de interés</label>
+            <textarea rows={3} placeholder="Cuéntanos qué procedimiento te interesa" className="mt-2 w-full bg-transparent border-b border-border focus:border-gold outline-none py-2 text-foreground resize-none placeholder:text-muted-foreground/60" />
           </div>
           <button
             type="submit"
             disabled={loading}
             className="w-full mt-4 px-8 py-4 bg-plum text-primary-foreground text-xs uppercase tracking-[0.25em] hover:bg-gold hover:text-plum transition-all duration-500 disabled:opacity-60"
           >
-            {loading ? "Enviando…" : "Solicitar consulta"}
+            {loading ? "Enviando…" : "Solicitar afiliación"}
           </button>
           <p className="text-xs text-muted-foreground text-center mt-2">
             Tus datos se tratan con absoluta confidencialidad.

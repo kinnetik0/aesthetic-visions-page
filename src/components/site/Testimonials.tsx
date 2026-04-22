@@ -1,18 +1,18 @@
 const items = [
   {
-    quote: "Una experiencia transformadora. El equipo me acompañó en cada paso con una calidez excepcional. Los resultados son exactamente lo que soñaba: naturales y elegantes.",
+    quote: "El proceso fue clarísimo desde el primer día. Pude operarme sin descapitalizarme y el acompañamiento postoperatorio con la terapeuta hizo toda la diferencia.",
     name: "Carolina M.",
-    treatment: "Rinoplastia",
+    treatment: "Plan Prepagado · Mamoplastia",
   },
   {
-    quote: "Profesionalismo y arte en cada detalle. La clínica es un oasis de tranquilidad y los resultados superaron todas mis expectativas.",
+    quote: "Llevaba años postergando mi cirugía por el costo. Con el Plan Europeo pude operarme pagando el 50% y el resto en cuotas. Hoy me siento renovada.",
     name: "Valentina R.",
-    treatment: "Aumento Mamario",
+    treatment: "Plan Europeo · Liposucción",
   },
   {
-    quote: "Confianza desde la primera consulta. Recibí un trato personalizado y discreto, y hoy me siento radiante. Lo recomiendo sin dudarlo.",
+    quote: "Entré a la Cooperativa con amigas y nos fuimos operando una por mes. La asesoría, los exámenes, la clínica… todo coordinado por ellos.",
     name: "Sofía L.",
-    treatment: "Medicina Estética",
+    treatment: "Cooperativa · Rinoplastia",
   },
 ];
 
@@ -27,7 +27,7 @@ const Testimonials = () => {
             <span className="inline-block w-12 h-px bg-gold" />
           </div>
           <h2 className="font-serif text-4xl md:text-5xl text-balance">
-            Historias que <em className="text-gold not-italic">inspiran</em>
+            Más de 30.000 mujeres ya <em className="text-gold not-italic">confiaron en nosotros</em>
           </h2>
         </div>
 
