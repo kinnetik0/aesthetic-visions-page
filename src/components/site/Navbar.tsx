@@ -5,9 +5,9 @@ import logo from "@/assets/logo.png";
 
 const links = [
   { href: "#inicio", label: "Inicio" },
-  { href: "#servicios", label: "Servicios" },
+  { href: "#planes", label: "Planes" },
+  { href: "#proceso", label: "Proceso" },
   { href: "#nosotros", label: "Nosotros" },
-  { href: "#equipo", label: "Equipo" },
   { href: "#testimonios", label: "Testimonios" },
   { href: "#contacto", label: "Contacto" },
 ];
@@ -50,7 +50,7 @@ const Navbar = () => {
           href="#contacto"
           className="hidden lg:inline-flex items-center px-6 py-2.5 text-xs uppercase tracking-[0.2em] border border-plum text-plum hover:bg-plum hover:text-primary-foreground transition-colors"
         >
-          Reservar Cita
+          Afíliate
         </a>
 
         <button
@@ -80,7 +80,7 @@ const Navbar = () => {
               onClick={() => setOpen(false)}
               className="mt-2 inline-flex justify-center items-center px-6 py-3 text-xs uppercase tracking-[0.2em] border border-plum text-plum"
             >
-              Reservar Cita
+              Afíliate
             </a>
           </div>
         </div>
