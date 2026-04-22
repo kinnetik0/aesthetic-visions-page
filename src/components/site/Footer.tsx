@@ -1,12 +1,13 @@
 import { Instagram, Facebook, Youtube } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const Footer = () => {
   return (
     <footer className="bg-plum text-primary-foreground/80">
       <div className="container py-16 grid md:grid-cols-4 gap-10">
         <div className="md:col-span-2">
-          <div className="font-serif text-2xl">
-            Maison<span className="text-gold">Estética</span>
+          <div className="bg-background/95 inline-block p-3 rounded">
+            <img src={logo} alt="CIL Venezuela" className="h-14 w-auto" />
           </div>
           <p className="mt-4 max-w-sm text-sm leading-relaxed">
             Cirugía estética y medicina del bienestar de alta gama, donde la elegancia
