@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
+import logo from "@/assets/logo.png";
 
 const links = [
   { href: "#inicio", label: "Inicio" },
@@ -29,8 +30,8 @@ const Navbar = () => {
       )}
     >
       <div className="container flex items-center justify-between h-20">
-        <a href="#inicio" className="flex items-center gap-2">
-          <span className="font-serif text-2xl text-plum tracking-wide">Maison<span className="text-gold">Estética</span></span>
+        <a href="#inicio" className="flex items-center gap-2" aria-label="CIL Venezuela — Inicio">
+          <img src={logo} alt="CIL Venezuela — Financiamiento de cirugías estéticas" className="h-12 w-auto" />
         </a>
 
         <nav className="hidden lg:flex items-center gap-10">
