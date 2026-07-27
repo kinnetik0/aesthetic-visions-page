@@ -70,8 +70,8 @@ const Process = () => {
             </article>
           ))}
 
-          {/* Recuadro de la imagen del quirófano integrado en la grilla */}
-          <div className="bg-background overflow-hidden relative min-h-[280px]">
+          {/* Recuadro de la imagen del quirófano abarcando dos columnas en PC */}
+          <div className="bg-background overflow-hidden relative min-h-[280px] lg:col-span-2">
             <img 
               src={quirofanoImg} 
               alt="Quirófano equipado para cirugía estética" 
