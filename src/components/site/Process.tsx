@@ -36,6 +36,8 @@ const steps = [
   },
 ];
 
+import quirofanoImg from "../../assets/quirofano.jpg";
+
 const Process = () => {
   return (
     <section id="proceso" className="py-28 bg-cream">
@@ -58,16 +60,27 @@ const Process = () => {
           {steps.map((s) => (
             <article
               key={s.n}
-              className="bg-background p-10 hover:bg-blush/40 transition-colors duration-500"
+              className="bg-background p-10 hover:bg-blush/40 transition-colors duration-500 flex flex-col justify-between"
             >
-              <div className="font-serif text-5xl text-gold/80 mb-4">{s.n}</div>
-              <h3 className="font-serif text-2xl text-plum mb-3">{s.title}</h3>
-              <p className="text-sm text-muted-foreground leading-relaxed">{s.desc}</p>
+              <div>
+                <div className="font-serif text-5xl text-gold/80 mb-4">{s.n}</div>
+                <h3 className="font-serif text-2xl text-plum mb-3">{s.title}</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">{s.desc}</p>
+              </div>
             </article>
           ))}
+
+          {/* Recuadro de la imagen del quirófano integrado en la grilla */}
+          <div className="bg-background overflow-hidden relative min-h-[280px]">
+            <img 
+              src={quirofanoImg} 
+              alt="Quirófano equipado para cirugía estética" 
+              className="w-full h-full object-cover absolute inset-0"
+            />
+          </div>
         </div>
 
-        <p className="text-center mt-16 text-sm italic text-plum-light max-w-xl mx-auto">
+        <p className="text-center mt-16 text-sm italic text-plum-light max-w-xl mx-auto clear-both">
           “El resultado de la cirugía depende única y exclusivamente de la constancia y del cuidado postoperatorio.”
         </p>
       </div>
