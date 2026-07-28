@@ -1,4 +1,4 @@
-import clinicImg from "@/assets/clinic.jpg";
+import recepcionImg from "@/assets/recepcion.jpg";
 import { Check } from "lucide-react";
 
 const points = [
@@ -16,8 +16,8 @@ const About = () => {
         <div className="relative order-2 lg:order-1">
           <div className="absolute -top-6 -left-6 w-32 h-32 border-2 border-gold hidden md:block" />
           <img
-            src={clinicImg}
-            alt="Clínica aliada de CIL Venezuela para cirugías estéticas"
+            src={recepcionImg}
+            alt="Recepción y sala de espera de la clínica estética de CIL Venezuela"
             width={1280}
             height={896}
             loading="lazy"
